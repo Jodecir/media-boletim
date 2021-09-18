@@ -1,9 +1,23 @@
 :root {
 	--preto: #000000;
   --branco: #ffffff;
-  --brancoAcizentado: #e4e4e4;
+  --azul: #5120ff;
   --cinzaClaro: #707070;
   --cinzaEscuro: #555555;
+}
+
+.dark:root {
+  --preto:#ffffff;
+  --branco: #000000;
+  --azul: #381ba0;
+  --cinzaClaro: #707070;
+  --cinzaEscuro: #555555;
+}
+
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
 }
 
 html {
@@ -13,11 +27,12 @@ html {
 body {
   margin: 0;
   padding: 0;
-  color: var(--preto);
+  background-color: var(--preto);
+  color: var(--branco);
   font-family: Principal;
   scroll-behavior: smooth;
   background-image: url('https://image.flaticon.com/icons/png/512/201/201635.png');
-  background-position: center bottom;
+  background-position: bottom;
   background-repeat: no-repeat;
   background-size: 50vh;
 }
@@ -29,11 +44,104 @@ body {
 }
 
 .page-title {
-  color: var(--preto);
-  margin: 0 0 5px;
+  color: var(--branco);
+  margin: 0 0 15px;
 }
 
 .page-subtitle {
-  color: var(--preto);
-  margin-top: 5px;
+  color: var(--branco);
+  margin-bottom: 15px;
+}
+
+#ok {
+  color: var(--azul);
+}
+
+/* HUD */
+.hud {
+  border: 2px solid #141414;
+  border-radius: 30px;
+  background-color: #141414;
+  color: #ffffff;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  width: 100px;
+  height: 50px;
+  padding: 10px;
+}
+
+.group {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  padding: 5px 0;
+}
+
+label {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+
+button {
+  background: var(--preto);
+  border: 2px solid var(--cinza);
+  color: var(--branco);
+  margin: 5px 0 10px;
+  height: 35px;
+  width: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Dark Mode Feature */ 
+.dark-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+	height: 5vh;
+}
+
+.slide-checkbox {
+  position: absolute;
+	opacity: 0;
+}
+
+.label {
+	background-color: var(--preto);
+	border-radius: 25px;
+	cursor: pointer;
+	display: flex;
+	justify-content: space-between;
+	height: 15px;
+	transform: scale(1.5);
+}
+
+.label .ball {
+	background-color: var(--branco);
+	border-radius: 50%;
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	height: 11px;
+	width: 11px;
+	transform: translateX(0px);
+	transition: transform 0.2s linear;
+}
+
+.slide-checkbox:checked + .label .ball {
+	transform: translateX(15px);
+}
+
+.fa-moon {
+  color: var(--verde);
+	transform: scale(0.5);
+}
+
+.fa-sun {
+  color: var(--branco);
+	transform: scale(0.5);
 }
