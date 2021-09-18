@@ -8,7 +8,9 @@ function exe() {
   
   if (media >= 7) {
       ok.innerHTML = "Sua média é " + media + " e você foi Aprovado";
+  } else if (media >= 5) {
+      ok.innerHTML = "Sua média é " + media + " e você está em Recuperação";
   } else {
       ok.innerHTML = "Sua média é " + media + " e você foi Reprovado";
-  }
+}
 }
