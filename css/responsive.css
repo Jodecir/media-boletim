@@ -1,0 +1,18 @@
+@media (max-width: 700px) {
+  body {
+    background-image: none;
+  }
+
+  .box {
+    width: 115px;
+    height: 115px;
+  }
+
+  .hud {
+    display: none;
+  }
+
+  .checkbox-container {
+    display: flex;
+  }
+}
