@@ -1,0 +1,19 @@
+:root {
+	--preto: #000000;
+  --branco: #ffffff;
+  --brancoAcizentado: #e4e4e4;
+  --cinzaClaro: #707070;
+  --cinzaEscuro: #555555;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--preto);
+  font-family: Principal;
+  scroll-behavior: smooth;
+}
