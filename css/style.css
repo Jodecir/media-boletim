@@ -55,7 +55,7 @@ button {
   background: var(--azul);
   border: 1px solid var(--cinzaEscuro);
   color: var(--branco);
-  margin: 5px 0 10px;
+  margin: 5px 0px 10px;
   height: 35px;
   width: 70px;
   font-size: 15px;
