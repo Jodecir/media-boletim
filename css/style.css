@@ -1,6 +1,7 @@
 :root {
 	--preto: #000000;
   --branco: #ffffff;
+  --amarelo: #fada06;
   --azul: #381ba0;
   --cinzaClaro: #707070;
   --cinzaEscuro: #555555;
@@ -9,6 +10,7 @@
 .dark:root {
   --preto:#ffffff;
   --branco: #000000;
+  --amarelo: #fada06;
   --azul: #381ba0;
   --cinzaClaro: #707070;
   --cinzaEscuro: #555555;
@@ -31,10 +33,6 @@ body {
   color: var(--branco);
   font-family: Principal;
   scroll-behavior: smooth;
-  background-image: url('https://image.flaticon.com/icons/png/512/201/201635.png');
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 50vh;
 }
 
 .container {
@@ -71,6 +69,7 @@ button:hover {
 
 input {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  border-bottom: 4px solid var(--amarelo);
   margin-bottom: 10px;
 }
 
@@ -158,6 +157,10 @@ label {
 /* FORK ME RIBBON */
 #forkongithub a {
   background: var(--preto);
+  background-image: url('https://image.flaticon.com/icons/png/512/201/201635.png');
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 20vh;
   color: var(--branco);
   text-decoration: none;
   font-family: arial,sans-serif;
