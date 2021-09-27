@@ -53,6 +53,22 @@ body {
   margin-bottom: 15px;
 }
 
+button {
+  background: var(--azul);
+  border: 1px solid var(--cinzaEscuro);
+  color: var(--branco);
+  margin: 5px 0 10px;
+  height: 35px;
+  width: 50px;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+button:hover {
+  color: var(--preto);
+}
+
 input {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-bottom: 10px;
@@ -87,18 +103,6 @@ input {
 label {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   margin-bottom: 10px;
-}
-
-button {
-  background: var(--preto);
-  border: 2px solid var(--cinza);
-  color: var(--branco);
-  margin: 5px 0 10px;
-  height: 35px;
-  width: 50px;
-  font-size: 15px;
-  cursor: pointer;
-  border-radius: 10px;
 }
 
 /* Dark Mode Feature */ 
