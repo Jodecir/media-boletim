@@ -4,7 +4,7 @@ function exe() {
   var n3 = parseInt(document.getElementById("n3").value); 
   var n4 = parseInt(document.getElementById("n4").value);
 
-  var ok = document.getElementById("ok");
+  var result = document.getElementById("result");
   
   var qtdBimestres = 4
   var media = (n1 + n2 + n3 + n4) / qtdBimestres;
@@ -15,10 +15,10 @@ function exe() {
   var notaFaltanteFixada = notaFaltante.toFixed(0);
   
   if (notaFixada >= valorAprovado) {
-      ok.innerHTML = "Sua média é " + notaFixada + " e você foi Aprovado";
+      result.innerHTML = "Sua média é " + notaFixada + " e você foi Aprovado";
   } else if (notaFixada >= 6) {
-      ok.innerHTML = "Sua média é " + notaFixada + " e você está em Recuperação por falta de " + notaFaltanteFixada + " pontos";
+      result.innerHTML = "Sua média é " + notaFixada + " e você está em Recuperação por falta de " + notaFaltanteFixada + " pontos";
   } else {
-      ok.innerHTML = "Sua média é " + notaFixada + " e você foi Reprovado por falta de " + notaFaltanteFixada + " pontos";
+      result.innerHTML = "Sua média é " + notaFixada + " e você foi Reprovado por falta de " + notaFaltanteFixada + " pontos";
   }
 }
