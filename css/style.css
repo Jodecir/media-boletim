@@ -1,7 +1,7 @@
 :root {
 	--preto: #000000;
   --branco: #ffffff;
-  --azul: #5120ff;
+  --azul: #381ba0;
   --cinzaClaro: #707070;
   --cinzaEscuro: #555555;
 }
@@ -173,12 +173,13 @@ label {
   top: 25px;
   right: -62px;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: var(--preto);
+  -webkit-text-stroke-color: var(--azul);
 }
 
 #forkongithub a:hover {
   background: var(--azul);
   color: var(--branco);
+  -webkit-text-stroke-color: var(--preto);
 }
 
 #forkongithub a::before, #forkongithub a::after {
