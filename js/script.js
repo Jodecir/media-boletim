@@ -18,7 +18,9 @@ function exe() {
       result.innerHTML = "Sua média é " + notaFixada + " e você foi Aprovado";
   } else if (notaFixada >= 6) {
       result.innerHTML = "Sua média é " + notaFixada + " e você está em Recuperação por falta de " + notaFaltanteFixada + " pontos";
-  } else {
+  } else if (notaFixada >= 0) {
       result.innerHTML = "Sua média é " + notaFixada + " e você foi Reprovado por falta de " + notaFaltanteFixada + " pontos";
-  }
+  } else {
+      result.innerHTML = "Ei!! coloque todos os dados corretamentes.";
+    }
 }
