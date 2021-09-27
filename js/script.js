@@ -14,15 +14,15 @@ function exe() {
   var notaFaltante = mediaFaltante.toFixed(1) * qtdBimestres;
   var notaFaltanteFixada = notaFaltante.toFixed(0);
   
-  if (notaFixada >= valorAprovado) {
-      result.innerHTML = "Sua média é " + notaFixada + " e você foi Aprovado";
+  if (notaFixada < 0 || notaFixada > 10) {
+    result.innerHTML = "Informar apenas valores de 0 a 10 nas notas ";
+  } else if (notaFixada >= valorAprovado) {
+    result.innerHTML = "Sua média é " + notaFixada + " e você foi Aprovado";
   } else if (notaFixada >= 6) {
       result.innerHTML = "Sua média é " + notaFixada + " e você está em Recuperação por falta de " + notaFaltanteFixada + " pontos";
   } else if (notaFixada >= 0) {
       result.innerHTML = "Sua média é " + notaFixada + " e você foi Reprovado por falta de " + notaFaltanteFixada + " pontos";
-  } else if (notaFixada < 0 || notaFixada > 10) {
-      result.innerHTML = "Informar apenas valores de 0 a 10 nas notas ";
   } else {
-      alert("Ei!! coloque todos os dados corretamentes.");
+      alert("Preciso de todos os campos preenchidos!!");
   }
 }
