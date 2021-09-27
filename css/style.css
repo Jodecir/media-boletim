@@ -63,6 +63,8 @@ button {
   font-size: 15px;
   cursor: pointer;
   border-radius: 10px;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: var(--branco);
 }
 
 button:hover {
