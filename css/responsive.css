@@ -2,7 +2,7 @@
   #forkongithub { 
     display: hidden;
     top: 0;
-    right: 0;
+    right: 20px;
     overflow: hidden;
     z-index: 9999;
   }
