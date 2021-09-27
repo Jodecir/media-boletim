@@ -53,6 +53,11 @@ body {
   margin-bottom: 15px;
 }
 
+input {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 10px;
+}
+
 #ok {
   color: var(--azul);
 }
