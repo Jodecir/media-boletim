@@ -32,7 +32,6 @@ body {
   background-color: var(--preto);
   color: var(--branco);
   font-family: Principal;
-  scroll-behavior: smooth;
 }
 
 .container {
