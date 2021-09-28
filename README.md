@@ -2,6 +2,10 @@
 
 Boletim que faz média dos bimestres em JS
 
+### Features Adicionadas:
+
+* [Dark Mode](https://www.w3schools.com/Jsref/met_element_addeventlistener.asp)
+
 ### Ferramentas Utilizadas:
 
 ![VS Code](http://img.shields.io/badge/-VS%20Code-007ACC?style=flat&logo=visual-studio-code&logoColor=ffffff)
