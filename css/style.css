@@ -50,6 +50,17 @@ body {
   margin-bottom: 15px;
 }
 
+input {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin: 4px 200px 4px 200px;
+  border-bottom: 4px solid var(--amarelo);
+  margin-bottom: 10px;
+}
+
+input:hover {
+  border-bottom: 4px solid var(--cinzaClaro);
+}
+
 button {
   background: var(--azul);
   border: 1px solid var(--cinzaEscuro);
@@ -64,17 +75,6 @@ button {
 
 button:hover {
   color: var(--preto);
-}
-
-input {
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  margin: 4px 200px 4px 200px;
-  border-bottom: 4px solid var(--amarelo);
-  margin-bottom: 10px;
-}
-
-input:hover {
-  border-bottom: 4px solid var(--cinzaClaro);
 }
 
 #result {
