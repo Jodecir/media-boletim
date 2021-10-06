@@ -13,7 +13,7 @@
   --amarelo: #fada06;
   --azul: #381ba0;
   --cinzaClaro: #707070;
-  --cinzaEscuro: #555555;
+  --cinzaEscuro: rgb(84, 84, 84, 0.2);
 }
 
 * {
@@ -49,6 +49,17 @@ body {
   color: var(--branco);
   margin-bottom: 15px;
 }
+/* MAIN HUD */
+.hud-bg {
+  text-align: center;
+  padding: 5px;
+  background-color: var(--cinzaEscuro);
+  width: 40vw;
+  max-width: 450px;
+  min-width: 200px;
+  margin: auto;
+  border-radius: 10px;
+}
 
 input {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -82,7 +93,7 @@ button:hover {
 }
 
 /* HUD */
-.hud {
+.hud-darkmode {
   border: 2px solid #141414;
   border-radius: 30px;
   background-color: #141414;

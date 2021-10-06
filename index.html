@@ -13,7 +13,7 @@
     <script src="js/dark-mode.js" defer></script>
   </head>
   <div class="header">
-    <div class="hud">
+    <div class="hud-darkmode">
       <div class="group">
         <div class="dark-checkbox">
           <input type="checkbox" class="slide-checkbox" id="chk"/>
@@ -33,25 +33,27 @@
       <p class="page-subtitle">
       Descubra qual a sua média de nota de todas as provas!
       </p>
-      <div class="page-subtitle">
-        <span>Média necessária para aprovação:</span>      
-        <select id="valorAprovado" type="number"> 
-          <option value=5>5</option>
-          <option value=6>6</option>
-          <option value=7 selected>7</option>
-          <option value=8>8</option>
-          <option value=9>9</option>
-        </select>
+      <div class="hud-bg">
+        <div class="page-subtitle">
+          <span>Média necessária para aprovação:</span>      
+          <select id="valorAprovado" type="number"> 
+            <option value=5>5</option>
+            <option value=6>6</option>
+            <option value=7 selected>7</option>
+            <option value=8>8</option>
+            <option value=9>9</option>
+          </select>
+        </div>
+        <input placeholder="Insira a Primeira nota" type="number" min="0" max="10" id="n1">
+        <input placeholder="Insira a Segunda nota" type="number" min="0" max="10" id="n2">
+        <input placeholder="Insira a Terceira nota" type="number" min="0" max="10" id="n3">
+        <input placeholder="Insira a Quarta nota" type="number" min="0" max="10" id="n4">
+        <br>
+        <button onclick="AverageInput()">Calcular</button>
+        <button onclick="ResetInput()">Limpar</button>
+        <br>
+        <mark id="result"></mark>
       </div>
-      <input placeholder="Insira a Primeira nota" type="number" min="0" max="10" id="n1">
-      <input placeholder="Insira a Segunda nota" type="number" min="0" max="10" id="n2">
-      <input placeholder="Insira a Terceira nota" type="number" min="0" max="10" id="n3">
-      <input placeholder="Insira a Quarta nota" type="number" min="0" max="10" id="n4">
-      <br>
-      <button onclick="AverageInput()">Calcular</button>
-      <button onclick="ResetInput()">Limpar</button>
-      <br>
-      <mark id="result"></mark>
     </div>
   </body>
   <span id="forkongithub">
